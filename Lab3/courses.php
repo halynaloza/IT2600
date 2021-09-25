@@ -24,6 +24,7 @@ $statement->closeCursor();
 <tr>
   <td><?php echo $course['course_id']; ?></td>
   <td><?php echo $course['title']; ?></td>
+  <td><?php echo $course['credit_hrs']; ?></td>
 </tr>
 <?php } ?>
 </table>
