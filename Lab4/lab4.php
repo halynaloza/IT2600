@@ -20,7 +20,7 @@
     // TODO: Read in the "rate" from the post. Assign it to $rate. 
     $rate = 3;
 
-    // TODO: Read in the number of years "years". Create a new variable and assign the "years" value to it.
+    // TODO:: Read in the number of years "years". Create a new variable and assign the "years" value to it.
 
     // TODO: Read in "extra" from the post. Create a new variable and assign the "extra" value to it.
 
