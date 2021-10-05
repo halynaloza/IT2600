@@ -11,7 +11,7 @@
 </style>
 </head>
 <body
-    <h1>Simple Investment Calculator</h1>
+    <h3>Simple Investment Calculator</h3>
     <?php
 
     setlocale(LC_MONETARY,"en_US");
