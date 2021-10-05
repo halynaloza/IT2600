@@ -49,9 +49,10 @@
     ?>
     <tr>
         <td class="year"><?php echo ($x+1); ?>
-        <td><?php echo money_format("$%i", $startamount); ?></td>
-        <td><?php echo money_format("$%i", $interest); ?></td>
-        <td><?php echo money_format("$%i", $newamount); ?></td>
+        <td><?php printf ( "$%.02f" , $startamount ); ?></td>
+        <td><?php printf ( "$%.02f" , $interest ); ?></td>
+        <td><?php printf ( "$%.02f" , $newamount ); ?></td> 
+ 
         <!-- TODO: if "addamount is equal to "Yes", display two additional columns: the extra amount and the $newamount after adding the extra. -->
     <?php
     }
