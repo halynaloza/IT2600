@@ -109,10 +109,9 @@
 
         <td><?php echo "$ " . number_format( $startamount,2); ?></td>
 
-        <td><?php echo "$ " . number_format($interest,2); ?></td>
+<td><?php echo "$ " . number_format($interest,2); ?></td>
 
-        <td><?php echo "$ " . number_format($newamount,2); ?></td>
-
+<td><?php echo "$ " . number_format($newamount,2); ?></td>
         <!-- TODO: if "addamount is equal to "Yes", display two additional columns: the extra amount and the $newamount after adding the extra. -->
 
     <?php
