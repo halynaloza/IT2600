@@ -54,20 +54,14 @@
 
     <h3>Annual Schedule</h3>
 
+    <h3>Annual Schedule</h3>
     <table>
-
         <tr>
-
             <th>Year</th>
-
             <th>Start Amount</th>
-
             <th>Interest</th>
-
             <th>End Amount</th>
-
         </tr>
-
     <?php
 
     // TODO: modify the loop, so it only loops for the number of years invested.
