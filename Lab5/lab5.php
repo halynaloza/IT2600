@@ -10,8 +10,8 @@
     .year {width:30px;}
 </style>
 </head>
-<body
-    <h3>Simple Investment Calculator</h3>
+<body>
+    <h1>Simple Investment Calculator</h1>
     <?php
 
     setlocale(LC_MONETARY,"en_US");
