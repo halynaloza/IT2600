@@ -1,31 +1,17 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-
 <title>Investment Calculator</title>
-
 <style>
-
     td, th { text-align: right }
-
     td {padding:4px; width: 110px; }
-
     tr:nth-child(even) {background-color: #e5e5e5; }
-
     tr {border-bottom:1px solid #cccccc; }
-
     .year {width:30px;}
-
 </style>
-
 </head>
-
-<body>
-
+<body
     <h1>Simple Investment Calculator</h1>
-
     <?php
 
     setlocale(LC_MONETARY,"en_US");
@@ -38,18 +24,17 @@
 
     $rate = $_POST['rate'];
 
-
     // TODO: Read in the number of years "years". Create a new variable and assign the "years" value to it.
 
-    $years=$_POST['years'];
+    $years = $_POST['years'];
 
     // TODO: Read in "extra" from the post. Create a new variable and assign the "extra" value to it.
 
-      $extra=$_POST['extra'];
+      $extra = $_POST['extra'];
 
     // TODO: Read in "addamount" from the post. Create a new variable and assign the "addamount" value to it.
 
-     $addamount=$_POST['addamount'];
+     $addamount = $_POST['addamount'];
 
     ?>
 
