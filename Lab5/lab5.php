@@ -30,29 +30,7 @@
 
     setlocale(LC_MONETARY,"en_US");
 
-    // TODO: Study the following example reading in the value for the initial amount. Use this example to read in the other values in the next steps.
-
-    $newamount = $_POST['amount'];
-
-    // TODO: Read in the "rate" from the post. Assign it to $rate.
-
-    $rate = $_POST['rate'];
-
-
-    // TODO: Read in the number of years "years". Create a new variable and assign the "years" value to it.
-
-    $years=$_POST['years'];
-
-    // TODO: Read in "extra" from the post. Create a new variable and assign the "extra" value to it.
-
-      $extra=$_POST['extra'];
-
-    // TODO: Read in "addamount" from the post. Create a new variable and assign the "addamount" value to it.
-
-     $addamount=$_POST['addamount'];
-
-    ?>
-
+   
     <h3>Investment Details</h3>
 
     <?php
