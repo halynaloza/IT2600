@@ -30,7 +30,29 @@
 
     setlocale(LC_MONETARY,"en_US");
 
-   
+    // TODO: Study the following example reading in the value for the initial amount. Use this example to read in the other values in the next steps.
+
+    $newamount = $_POST['amount'];
+
+    // TODO: Read in the "rate" from the post. Assign it to $rate.
+
+    $rate = $_POST['rate'];
+
+
+    // TODO: Read in the number of years "years". Create a new variable and assign the "years" value to it.
+
+    $years=$_POST['years'];
+
+    // TODO: Read in "extra" from the post. Create a new variable and assign the "extra" value to it.
+
+      $extra=$_POST['extra'];
+
+    // TODO: Read in "addamount" from the post. Create a new variable and assign the "addamount" value to it.
+
+     $addamount=$_POST['addamount'];
+
+    ?>
+
     <h3>Investment Details</h3>
 
     <?php
@@ -85,11 +107,11 @@
 
         <td class="year"><?php echo ($x+1); ?>
 
-        <td><?php printf ( "$%.02f" , $startamount ); ?></td>
+        <td><?php echo "$ " . number_format( $startamount,2); ?></td>
 
-        <td><?php printf ( "$%.02f" , $interest ); ?></td>
+        <td><?php echo "$ " . number_format($interest,2); ?></td>
 
-        <td><?php printf ( "$%.02f" , $newamount ); ?></td>
+        <td><?php echo "$ " . number_format($newamount,2); ?></td>
 
         <!-- TODO: if "addamount is equal to "Yes", display two additional columns: the extra amount and the $newamount after adding the extra. -->
 
