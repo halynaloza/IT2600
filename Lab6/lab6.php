@@ -22,28 +22,22 @@ input { width:220px; }
 ///print_r($_POST);
 
 
-/*Solution 1*/
 $first_name = ucfirst(trim($_POST['first']));
 $middle_name = ucfirst(trim($_POST['middle']));
 $get_first_char = ucfirst($middle_name[0]);
 $last_name = trim($_POST['last']);
 $combine_name = $first_name.' '.$get_first_char.'. '.$last_name;
 
-/*Solution 2*/
 
 $RequestedString = trim($_POST['split']);
 /*now, spliting the requested string with dash (-)
 using explode function , will return an array*/
 $splitString = explode("-",$RequestedString);
 
-
-/*Solution 3*/
 $shuffleReqString = str_shuffle(trim($_POST['shuffle']));
 
-/*Solution 4*/
 $RequestedStringInLowerCase = strtolower(trim($_POST['tolower']));
 
-/*Solution 5*/
 $compare1 = trim($_POST['compare1']);
 $compare2 = trim($_POST['compare2']);
 
