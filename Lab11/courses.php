@@ -45,7 +45,7 @@ $result = $conn->query($sql);
 <tr><th>Course Id</th><th>Title</th><th>Credit Hrs</th><th>Description</th></tr>
 <?php
 if ($result->num_rows > 0) {
-  while($row = result=>fetch_assoc()) {
+  while($row = $result->fetch_assoc()) {
     echo "<tr><td>" . $row["course_id"]. "</td><td>" . $row["title"]. "</td>" . 
          "<td>" . $row["credit_hrs"]. "</td><td>" . $row["description"]. "</td></tr>";
   }
