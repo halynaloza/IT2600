@@ -24,8 +24,8 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT * FROM courses";
-$result = mysqli_query($conn, $sql);
+$sql = "SELECT courseid, title, description FROM MyGuests ORDER BY lastname";
+$result = $conn->query($sql);
 
 ?>
 <table>
