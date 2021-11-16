@@ -24,7 +24,7 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "SELECT courseid, title, description FROM it1150 ORDER BY lastname";
+$sql = "SELECT courseid, title, description FROM it1150 ORDER BY discription";
 $result = mysqli_query($conn, $sql);
 
 ?>
@@ -44,7 +44,7 @@ $result = mysqli_query($conn, $sql);
 </tr>
 <tr><th>Course Id</th><th>Title</th><th>Credit Hrs</th><th>Description</th></tr>
 <?php
-if (mysqli_num_rows($result) > 1) {
+if (mysqli_num_rows($result) > 0) {
   while($row = mysqli_fetch_assoc($result)) {
     echo "<tr><td>" . $row["course_id"]. "</td><td>" . $row["title"]. "</td>" . 
          "<td>" . $row["credit_hrs"]. "</td><td>" . $row["description"]. "</td></tr>";
